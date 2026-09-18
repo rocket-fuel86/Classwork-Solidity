@@ -1,0 +1,150 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "addElement",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "findValue",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "found",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNumbers",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "numbers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "removeAt",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sortArray",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"addElement(uint256)": {
+					"notice": "Додавання елемента до масиву"
+				},
+				"findValue(uint256)": {
+					"notice": "Пошук значення в масиві"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/array_utils.sol": "ArrayUtils"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/array_utils.sol": {
+			"keccak256": "0x5ce7eca39e71e28eb343e1e5c73b6259583e7012654e9eb99dadad49835c75f3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://85aad3dd5b903b86c9f7889cd8f9fd27efc2abbc86370c7bfc54002514158504",
+				"dweb:/ipfs/QmYW9f6WNc5DNaVDUv7ngXJLtBCN4iuG6ruRCvAKfhfdXB"
+			]
+		},
+		"lib/array_lib.sol": {
+			"keccak256": "0x97b77b1d3d1aed3abd09b48460ee64c06f43c8e5fd3d7a8002726c40ea7d2a68",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5582e28827bb10ef9c1025a71d8b4aaeeec68d9554c75b9bb01b3530abc178ce",
+				"dweb:/ipfs/QmPwEjZemdtCYaj5CmG9ef1KRaspQz9pmhDWk8ZUP4mE3J"
+			]
+		}
+	},
+	"version": 1
+}
