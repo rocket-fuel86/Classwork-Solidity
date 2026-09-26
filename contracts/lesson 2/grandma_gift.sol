@@ -22,6 +22,7 @@ contract GrandmaGift {
 
         delete birthdates[msg.sender];
 
-        payable(msg.sender).call{value: giftAmount}("");
+        (bool success,) = payable(msg.sender).call{value: giftAmount}("");
+        require(success, "Transaction incomplete");
     }
 }
